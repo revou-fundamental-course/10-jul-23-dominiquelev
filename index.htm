@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator BMI</title>  
+</head>
+<body>
+        <div class="container">
+            <div class="header">
+                <h1 id="titlelabel">Kalkulator BMI</h1>
+               
+            <form>
+                <h4>Usia(Tahun)</h4>
+                <input type="number" name="ageInput" id="ageInput" value="ageInput">                     
+                    <div class="gender">
+                        <h4>Jenis Kelamin</h4>
+                        <input type="radio" id="maleInput" value="maleInput" name="gender" /><label for="maleInput">Laki-laki</label>
+                        <input type="radio" id="femaleInput" value="femaleInput" name="gender"/><label for="femaleInput">Perempuan</label>
+                    </div>
+                    <div class="weight">
+                        <h4>Berat Badan(kg)</h4>
+                        <input type="number" name="weightInput" id="weightInput" value="weightInput">
+                        <div class="unit">kg</div>
+                    </div>
+                    <div class="height">
+                        <h4>Tinggi Badan(cm)</h4>
+                        <input type="number" name="heightInput" id="heightInput" value="heightInput">
+                        <div class="unit">cm</div>
+                    </div>
+            </form> 
+            <div class="result">
+                <button id="bmiResult" onclick="calculateBmi()">Hitung BMI</button>
+            </div>  
+            <div class="reset">
+                <button id="bmiReset" onclick="reload()">reset</button>
+            </div>
+            <h3 id="heading"></h5>         
+            <h5 id="bmi-output"></div>
+                <p class="comment" id="resultMessage"><span></span></p>
+
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

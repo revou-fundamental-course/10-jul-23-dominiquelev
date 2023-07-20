@@ -1,0 +1,116 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+
+
+.container{
+    max-width: 400px;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 8px 24px;
+    box-shadow: 0 4px 8px  -3px rgba(0, 0, 0.3);
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+.header h1{
+    text-align: center;
+    background-color: rgb(19, 16, 16);
+    color: whitesmoke;
+    font-weight: 900;
+    font-size:45px;
+    margin: -8px -24px;
+    margin-bottom: 8px;
+    padding: 16px;
+}
+
+.container form h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 16px 0 10px 0;
+}
+
+.container form input[type="number"] {
+    width: 100%;
+    padding: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.height, .weight{
+    position: relative;
+}
+
+.unit {
+    position: absolute;
+    right: 20px;
+    top : 50px;
+    color: #777;
+}
+
+#bmiResult {
+    padding: 10px 25px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#bmiReset {
+    padding: 10px 25px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    background-color: darkred;
+    color: #fff;
+    cursor: pointer;
+}
+
+#resultMessage {
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 25px;
+    font-weight: 500;
+    color: red;
+    font-style: italic;
+}
+
+#bmi-output {
+    color: green;
+    font-size: 50px;
+    font-weight: 900;
+    vertical-align: middle;
+    margin: -8px -24px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+#heading {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    font-size:25px;
+    padding: 16px;
+
+}
+div.result, div.reset {
+    display: inline-block;
+    
+} 
